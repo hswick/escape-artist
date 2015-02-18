@@ -1,0 +1,15 @@
+Escape Artist is a small Ruby program that reads in a text file
+and generates terminal art using escape sequences.
+
+To get started open up a repl:
+
+irb(main):001:0> require_relative 'escape_reader'
+irb(main):002:0> er = EscapeReader.new
+irb(main):003:0> er.test_run
+
+To generate a picture from a single string:
+
+puts(er.parse_color("krgybmce"))
+
+To generate a picture from a file:
+er.parse_color_file("flower.txt")
